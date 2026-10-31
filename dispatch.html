@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Dispatched | ETS Logistics LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dispatch.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ETS <span>LOGISTICS</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="process.html">How It Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="dispatch.html" class="btn btn-primary">Get Dispatched</a>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="dispatch-hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container">
+            <h1>Start Earning <span class="text-accent">More Today</span></h1>
+            <p>Fill out the form below and our dedicated dispatch team will contact you within 24 hours to get your truck moving.</p>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="dispatch-form-section section-padding">
+        <div class="container">
+            <div class="dispatch-grid">
+                
+                <!-- Left Side: Visual & Info -->
+                <div class="dispatch-info">
+                    <div class="info-image">
+                        <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?w=800&h=600&fit=crop" alt="Professional Dispatch Team">
+                    </div>
+                    <div class="info-content">
+                        <h3>Why Partner With ETS Logistics?</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-check-circle"></i> <strong>Top-Paying Loads:</strong> We negotiate the best rates for your lanes.</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>24/7 Support:</strong> A real dispatcher is always just a phone call away.</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Fast Paperwork:</strong> We handle broker packets and invoicing so you get paid faster.</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>No Forced Dispatch:</strong> You have the final say on every load we book.</li>
+                        </ul>
+                        <div class="contact-direct">
+                            <h4>Prefer to talk directly?</h4>
+                            <a href="tel:6065546862" class="phone-link"><i class="fas fa-phone-alt"></i> 606-554-6862</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: The Form -->
+                <div class="dispatch-form-wrapper">
+                    <h2>Dispatch Registration</h2>
+                    <p class="form-subtitle">Tell us about your truck and we'll find your next load.</p>
+                    
+                    <form class="dispatch-form" onsubmit="event.preventDefault(); alert('Thank you! Your request has been submitted. Our team will contact you shortly.');">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="companyName">Company Name</label>
+                                <input type="text" id="companyName" placeholder="Your Trucking LLC">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" placeholder="(555) 123-4567" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="truckType">Truck Type *</label>
+                                <select id="truckType" required>
+                                    <option value="" disabled selected>Select Equipment</option>
+                                    <option value="Dry Van">Dry Van</option>
+                                    <option value="Reefer">Reefer</option>
+                                    <option value="Flatbed">Flatbed</option>
+                                    <option value="Step Deck">Step Deck</option>
+                                    <option value="Car Hauler">Car Hauler</option>
+                                    <option value="Hotshot">Hotshot</option>
+                                    <option value="Box Truck">Box Truck</option>
+                                    <option value="Power Only">Power Only</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="numTrucks">Number of Trucks *</label>
+                                <input type="number" id="numTrucks" min="1" placeholder="1" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mcNumber">MC Number</label>
+                                <input type="text" id="mcNumber" placeholder="MC-123456">
+                            </div>
+                            <div class="form-group">
+                                <label for="dotNumber">DOT Number</label>
+                                <input type="text" id="dotNumber" placeholder="DOT-123456">
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Additional Message / Preferred Lanes</label>
+                            <textarea id="message" rows="4" placeholder="Tell us about your preferred lanes or any specific requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">Submit Request <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo">ETS <span>LOGISTICS</span></a>
+                <p>Professional truck dispatch solutions designed to keep your business moving forward.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:6065546862">606-554-6862</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:etslogisticsllc11@gmail.com">etslogisticsllc11@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ETS Logistics LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

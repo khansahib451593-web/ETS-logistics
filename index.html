@@ -1,13 +1,312 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ETS Logistics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETS Logistics LLC | Premium Truck Dispatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
-    <h1>Welcome to ETS Logistics</h1>
-    <p>Your Trusted International Logistics Partner</p>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">ETS <span>LOGISTICS</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#dispatch" class="btn btn-primary">Get Dispatched</a>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
 
+    <!-- HOME / HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Built to Help Drivers <span class="text-accent">Achieve More.</span></h1>
+            <p>Your success is our destination. Professional truck dispatch solutions designed to keep your business moving forward with top-paying loads and 24/7 support.</p>
+            <div class="hero-buttons">
+                <a href="#dispatch" class="btn btn-primary">Get Dispatched</a>
+                <a href="#contact" class="btn btn-outline">Get a Call Back</a>
+                <a href="#services" class="btn btn-text">View Our Services <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <i class="fas fa-box-open"></i>
+                <h3>5,000+</h3>
+                <p>Loads Booked</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <h3>300+</h3>
+                <p>Active Drivers</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-headset"></i>
+                <h3>24/7</h3>
+                <p>Dispatch Support</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-star"></i>
+                <h3>100%</h3>
+                <p>Satisfaction Rate</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">ABOUT US</span>
+                <h2 class="main-heading">Why Choose <span class="text-accent">ETS Logistics?</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Top-Paying Loads</h3>
+                    <p>We negotiate every single rate to ensure you get the maximum revenue per mile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-clock"></i></div>
+                    <h3>24/7 Real Support</h3>
+                    <p>A dedicated, real human dispatcher is always a phone call away, day or night.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>Nationwide Lanes</h3>
+                    <p>From our Denver HQ to coast-to-coast coverage, we find freight on your preferred routes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="operations-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">OUR SERVICES</span>
+                <h2 class="main-heading">Dispatch for <span class="text-accent">Every Truck</span></h2>
+                <p class="section-subtitle">We specialize in every type of commercial vehicle.</p>
+            </div>
+            <div class="premium-services-grid">
+                <div class="premium-service-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.pexels.com/photos/1646349/pexels-photo-1646349.jpeg?w=800&h=600&fit=crop" alt="Car Hauler">
+                        <div class="card-badge">01</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Car Hauler</h3>
+                        <p>Open and enclosed auto transport with maximum revenue optimization.</p>
+                        <a href="#dispatch" class="btn-card">Get Dispatched <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="premium-service-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.pexels.com/photos/2199476/pexels-photo-2199476.jpeg?w=800&h=600&fit=crop" alt="Dry Van">
+                        <div class="card-badge">02</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Dry Van</h3>
+                        <p>Consistent freight with smart backhauls and fewer empty miles.</p>
+                        <a href="#dispatch" class="btn-card">Get Dispatched <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="premium-service-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.pexels.com/photos/1616393/pexels-photo-1616393.jpeg?w=800&h=600&fit=crop" alt="Flatbed">
+                        <div class="card-badge">03</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Flatbed</h3>
+                        <p>Oversized freight with permits and securement planned upfront.</p>
+                        <a href="#dispatch" class="btn-card">Get Dispatched <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="premium-service-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.pexels.com/photos/105717/pexels-photo-105717.jpeg?w=800&h=600&fit=crop" alt="Reefer">
+                        <div class="card-badge">04</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Reefer</h3>
+                        <p>Temperature-controlled freight with careful scheduling.</p>
+                        <a href="#dispatch" class="btn-card">Get Dispatched <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="premium-service-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?w=800&h=600&fit=crop" alt="Hotshot">
+                        <div class="card-badge">05</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotshot</h3>
+                        <p>Time-sensitive expedited freight with pickup trucks & trailers.</p>
+                        <a href="#dispatch" class="btn-card">Get Dispatched <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="premium-service-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.pexels.com/photos/1650896/pexels-photo-1650896.jpeg?w=800&h=600&fit=crop" alt="Box Truck">
+                        <div class="card-badge">06</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Box Truck</h3>
+                        <p>Local & regional deliveries with consistent profitable routes.</p>
+                        <a href="#dispatch" class="btn-card">Get Dispatched <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section id="process" class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">HOW IT WORKS</span>
+                <h2 class="main-heading">From First Call to <span class="text-accent">First Load</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                    <h3>01. Contact Us</h3>
+                    <p>Call us or fill out the form to get started with ETS Logistics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-file-alt"></i></div>
+                    <h3>02. Send Documents</h3>
+                    <p>Share your MC/DOT authority, W-9, and insurance certificate.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-handshake"></i></div>
+                    <h3>03. We Book Loads</h3>
+                    <p>We find top-paying loads and negotiate rates on your behalf.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-truck"></i></div>
+                    <h3>04. You Drive</h3>
+                    <p>You focus on driving while we handle paperwork 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISPATCH FORM SECTION -->
+    <section id="dispatch" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Get Dispatched Today</h2>
+                <p>Fill out the form below and our team will contact you within 24 hours.</p>
+                <form class="dispatch-form" onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Company Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <select required>
+                        <option value="">Select Truck Type</option>
+                        <option>Car Hauler</option>
+                        <option>Dry Van</option>
+                        <option>Flatbed</option>
+                        <option>Reefer</option>
+                        <option>Hotshot</option>
+                        <option>Box Truck</option>
+                    </select>
+                    <input type="text" placeholder="MC Number">
+                    <input type="text" placeholder="DOT Number">
+                    <textarea placeholder="Message" rows="4"></textarea>
+                    <button type="submit" class="btn btn-accent btn-large">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">CONTACT US</span>
+                <h2 class="main-heading">We're Here to <span class="text-accent">Help</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:6065546862">606-554-6862</a><br><a href="tel:6193544675">619-354-4675</a></p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:etslogisticsllc11@gmail.com">etslogisticsllc11@gmail.com</a><br><a href="mailto:khansahib451593@gmail.com">khansahib451593@gmail.com</a></p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Denver, CO<br>United States</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="#home" class="logo">ETS <span>LOGISTICS</span></a>
+                <p>Professional truck dispatch solutions designed to keep your business moving forward.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:6065546862">606-554-6862</a></li>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:6193544675">619-354-4675</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:etslogisticsllc11@gmail.com">etslogisticsllc11@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ETS Logistics LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
